@@ -1,6 +1,6 @@
 // A function that does or both
 // 1 - take one or more fucntions as arguments 
-// 2 - returns the functions
+
 
 function multiGreet(func,count){
     for(let i=1; i<=count;i++){
@@ -21,3 +21,27 @@ function multiGreet(func,count){
 
 
 multiGreet(function(){console.log("Good Morning")},5);
+
+
+// 2 - returns the functions
+
+function oddeven(request){
+    if(request=="odd"){
+        let odd=function(n){
+            console.log(!(n%2==0));
+    
+        }
+        return odd;
+    }else if(request=="odd"){
+        let even=function(n){
+            console.log((n%2==0));
+    
+        }
+        return even;
+    } else {
+        console.log("bad Request");
+    }
+    
+ 
+}
+let request="odd";
